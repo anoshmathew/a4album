@@ -1,10 +1,7 @@
 import React from 'react'
 import { Link, useNavigate } from "react-router-dom";
-import './css/animate.css';
+
 import './css/hover-min.css';
-//import './css/owl.carousel.css';
-import './css/owl.theme.default.css';
-import './css/jquery.fancybox.min.css';
 import './css/bootstrap.min.css'
 import './css/style.css'
     
@@ -51,7 +48,7 @@ function Ano1(param) {
               <a className="nav-link" href="#home">HOME</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#cuple">cuple</a>
+              <a className="nav-link" href="#cuple">couple</a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#story">story</a>
