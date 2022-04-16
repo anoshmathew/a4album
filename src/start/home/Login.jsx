@@ -1,18 +1,16 @@
 import React, { useState } from "react";
 import Axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
-import './Login.css';
+import './Login.scss';
 
 
 function Login(param) {
-    const url = "http://localhost/magicevents/api.php?apicall=login";
+    const url = "https://a4album.com/apis/api.php?apicall=login";
     const navigate = useNavigate();
-   
     const [data, setData] = useState({
         username: "",
         password: "",
     });
-    
 
     function submit(e) {
         e.preventDefault();
@@ -21,20 +19,17 @@ function Login(param) {
             username: data.username,
             password: data.password,
         },{headers:{
-            
-        }}).then((res) => {
-           
+
+        }}).then((res) => {     
             localStorage.setItem("log", JSON.stringify(res));
             var log = JSON.parse(localStorage.getItem("log"));
             console.log(log);
             
             param.setUsernameAuth(log.data.user.username);
-           
+
             switch(log.data.user.username){
                 case 'ano1':
-                   
-                    navigate("user/ano1");
-                   
+                    navigate("user/ano1/view");
                     break;
                 case 'ano2':
                     navigate("user/ano2");
@@ -43,9 +38,7 @@ function Login(param) {
             }
         });
         console.log(data.username +", "+ data.password);
-    
-    }
-        
+    }    
     
     function handle(e) {
         const newdata = { ...data };
@@ -53,7 +46,7 @@ function Login(param) {
         setData(newdata);
     }
     return (
-        <div className="AA">
+        <div className="Log">
         <div className="Form_Page">
 
             <div className="Container" id="container">
@@ -91,8 +84,6 @@ function Login(param) {
 		</div>
 	</div>
 
-            
-       
         </div>
         </div>
     )

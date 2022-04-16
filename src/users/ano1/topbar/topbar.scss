@@ -1,0 +1,75 @@
+@import "../../../globalStyle.scss";
+.ano1{
+    .navbar {
+        padding: 10px 50px;
+        background: rgba(255, 255, 255, 0.82);
+    }
+    .navbar-brand{
+        font-family: 'Kaushan Script', cursive;
+
+        padding: 5px 0px;
+    
+        color: #000000;
+    
+        letter-spacing: 5px;
+    
+        font-size: 30px;
+    }
+    img {
+        border-radius: 5px;
+        margin-left: 10px;
+        width: 39px;
+        position: relative;
+        top: -3px;
+    }
+    .navbar-brand:hover {
+        color: #000000;
+        .fa-heartbeat {
+            color: #ff6868;
+        }
+    }
+    .navbar-light 
+    {
+    .navbar-nav .nav-link {
+        color: #000000;
+    }
+    .navbar-nav li {
+        font-weight: 600;
+        letter-spacing: 2px;
+        font-size: 18px;
+        font-family: 'Dosis', sans-serif;
+        text-transform: capitalize;
+        padding-right: 10px;
+    
+    }
+    }
+    .navbar-nav .nav-item .nav-link:visited {
+
+        color: #000000;
+    
+    }
+    .navbar-nav .nav-item .nav-link:hover,
+    .navbar-nav .nav-item .nav-link:focus {
+    
+        color: #ff4545;
+        cursor: pointer;
+    
+    }
+    
+    
+    .navbar-nav .nav-item .nav-link.active {
+        color: #ff4545;
+    }
+    
+    
+    .navbar-brand .fa-heartbeat {
+        color: #ff4545;
+    }
+    
+}
+
+
+
+
+
+
