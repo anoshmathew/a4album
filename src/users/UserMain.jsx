@@ -13,7 +13,7 @@ function UserMain(param) {
             {//<Route path="ano1" element={<Ano1 usernameAuth={param.usernameAuth} log={log}/>} />
             }
             <Route path="ano1/*" element={<Ano1/>} />
-            <Route path="ano2" element={<Ano2 usernameAuth={param.usernameAuth}/>} />
+            <Route path="ano2/*" element={<Ano2 usernameAuth={param.usernameAuth}/>} />
             
         </Routes>
     </div>

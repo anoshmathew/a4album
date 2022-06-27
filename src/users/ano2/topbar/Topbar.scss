@@ -1,0 +1,60 @@
+.Ano2Main{
+    
+    .topbar-main{
+        position: fixed;
+        z-index: 2;
+        width: 100%;
+        height: 70px;
+        line-height: 70px;
+        background-color: rgb(198, 187, 211);
+        transition: 1s;
+        .icons{
+            font-size: 18px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            
+            .left{   
+                li{           
+                    display: inline;
+                    margin-left: 3vw;
+                   
+                }
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+                a:hover{
+                    color: rgb(67, 85, 119);
+                }
+                .left-icon-1,.left-icon-2,.left-icon-3{
+                    
+                }
+                
+            }
+            .right{
+                margin-right: 4vw;
+                li{           
+                    display: inline;
+                    margin-left: 3vw;
+                   
+                }
+                a{
+                    text-decoration: none;
+                    color: white;
+                }
+                a:hover{
+                    color: rgb(67, 85, 119);
+                }
+            }
+        }
+        
+       
+    }
+    .topbar-main-small{
+        background-color:rgb(182, 186, 214);
+        height: 50px;
+        line-height: 50px;      
+    }
+    
+}

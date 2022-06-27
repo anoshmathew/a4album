@@ -32,7 +32,7 @@ function Login(param) {
                     navigate("user/ano1/view");
                     break;
                 case 'ano2':
-                    navigate("user/ano2");
+                    navigate("user/ano2/view");
                     break;
                 
             }

@@ -1,5 +1,6 @@
 import React from 'react'
-import { Link, useNavigate } from "react-router-dom";
+import { Routes, Route, Link,useNavigate } from "react-router-dom";
+import Ano2Main from './Ano2Main';
 
 function Ano2(param) {
   var username ="";
@@ -18,16 +19,11 @@ function Ano2(param) {
   return (
     
     <div>
-      {
-      ( username != "") ? (
-        <div>
-          Welcome {username} 
-           <button onClick={(e) => logout(e)}>Logout</button>
-        </div>
-      ) 
-      :
-      (<div>You have been signed out. Please Login!</div>)}
-    </div>
+    <Routes>
+          <Route path="view" element={<Ano2Main/>} />
+          
+    </Routes>
+  </div>
   )
 };
   

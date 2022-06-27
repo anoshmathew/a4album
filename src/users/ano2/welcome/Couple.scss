@@ -1,0 +1,67 @@
+
+.couple-main{
+    top:150px;
+    position: relative;
+    //background-color: rgb(174, 215, 251);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(111, 115, 138);
+    background-color: white;
+    
+    .heading{
+        h1{
+            padding-top: 20px;
+            font-size: 50px;
+        }
+        
+    }
+    .heart-icon{
+        color: red;
+        font-size: 26px;
+    }
+    .content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        .left{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        .img2{
+            width:280px;
+            border: 6px solid rgb(253, 242, 249);
+            border-radius: 50%;
+        }
+        .content{
+            display: flex;
+            flex-direction: column;
+            .paragraph{
+                text-align: center;
+            }
+            
+        }
+        }
+        .right{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        justify-content: center;
+        .img2{
+            width:280px;
+            border: 6px solid rgb(253, 242, 249);
+            border-radius: 50%;
+        }
+        .content{
+            display: flex;
+            flex-direction: column;
+            .paragraph{
+                text-align: center;
+            }
+        }
+        }
+    }
+}

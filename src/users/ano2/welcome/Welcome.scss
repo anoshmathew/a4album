@@ -1,0 +1,136 @@
+.welcome-main{
+    position:relative;
+    top:70px; 
+    z-index: 0;
+    // don't change till here
+    //height: 600px;
+    //background-color: antiquewhite;
+
+    .secondary-image{
+        
+        height: 450px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        
+        .img1-div{
+            margin-top: 8vh;
+            z-index: inherit;
+            height: auto;
+            width: 30%;
+            //background-color: aliceblue;
+            //border: 0.6vw solid white;
+            //-ms-transform: rotate(10deg); /* IE 9 */
+            //transform: rotate(10deg);
+            .img1{
+                float: left;
+                margin-left: 5vw;
+                -ms-transform: rotate(10deg); /* IE 9 */
+                transform: rotate(10deg);
+                width: 100%;
+                border: 0.6vw solid white;
+                filter: blur(2px);
+                transition: 1s;
+            }
+            .img1:hover{
+                
+                filter: blur(0);
+                transform: rotate(5deg);
+                margin-left: 4vh;
+            }
+        }
+
+        .img2-div{
+            margin-top: 5vh;
+            height: auto;
+            width: 30%;
+            //background-color: aliceblue;
+            //border: 0.6vw solid white;
+            //-ms-transform: rotate(10deg); /* IE 9 */
+            //transform: rotate(10deg);
+            .img2{
+                
+                float: right;
+                margin-right: 3vh;
+                -ms-transform: rotate(-6deg); /* IE 9 */
+                transform: rotate(-6deg);
+                width: 100%;
+              
+                border: 0.6vw solid white;
+                filter: blur(2px);
+                transition: 1s;
+                
+            }
+            .img2:hover{
+                filter: blur(0);
+                transform: rotate(-3deg);
+                margin-right: 1vh;
+                
+            }
+        }
+        
+    
+       
+    }
+    
+    .primary-image{
+        height: auto;
+        width: 100%;
+        
+        pointer-events: none; //so it wont be hoverable
+        .img-main-div{
+            margin-top: -400px;
+            position: relative;
+            
+            height: auto;
+            width: 100%;
+          
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            .img-main{
+                -ms-transform: rotate(-6deg); /* IE 9 */
+                transform: rotate(-6deg);
+                border: 0.8vw solid white;
+                position:relative;
+                height: 30vw;
+                
+                box-shadow: 7px 7px 4px rgba(9, 9, 9, 0.136);
+                transition: 1s;
+                
+            }
+            .rotate{
+                transform: rotate(6deg);
+            }
+            
+        }
+        
+    }
+    .names-main{
+        margin-top: 6vh;
+        height: 160px;
+        text-align: center;
+        
+        h1{
+            color: rgb(111, 115, 138);
+            font-size: 60px;
+            span{
+                font-size: 70px;
+            }
+        }
+        .event{
+            color: rgb(255, 255, 255);
+            background-color: rgba(134, 182, 255, 0.721);
+            width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+        }
+        h2{
+            font-size: 30px;
+        }
+        
+    }
+    
+}

@@ -26,8 +26,7 @@ function UserHome2({ imgName,setimgName}) {
         <div>
             <div className='user'>
                 <Topbar  menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
-                <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
-          
+                <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>         
             <div className='sections'>
                 <UserPage1/>
                 <UserPage2/>
